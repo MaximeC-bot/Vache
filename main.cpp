@@ -46,6 +46,7 @@ Point2D compute2DPolygonCentroid(const Point2D* vertices, int vertexCount)
     centroid.y += (y0 + y1)*a;
 
     signedArea *= 0.5;
+    cout << "L'aire est egale a "<<signedArea << "\n";
     centroid.x /= (6.0*signedArea);
     centroid.y /= (6.0*signedArea);
 
@@ -57,9 +58,6 @@ int main()
     Point2D polygon[] = {{-1.0,1.0}, {-1.0,-1.0}, {1.0,-1.0}, {1.0,1.0}};       //(-1, 1)(-1, -1)(1, -1)(1, 1)
     size_t vertexCount = sizeof(polygon) / sizeof(polygon[0]);
     Point2D centroid = compute2DPolygonCentroid(polygon, vertexCount);
-    std::cout << "Le centre de gravite vaut (" << centroid.x << ", " << centroid.y << ")\n";
+    cout << "L'abscisse du centre de gravite vaut " << centroid.x << ", et son ordonnee vaut " << centroid.y << "\n";
 }
 
-
-
-//{{0.0,0.0}, {0.0,10.0}, {10.0,10.0}, {10.0,0.0}}
