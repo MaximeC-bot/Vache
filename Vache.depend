@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1395737702 source:d:\projets\vache\vache\polygone.cpp
+	"Polygone.h"
+	<stdio.h>
+
+1395737702 d:\projets\vache\vache\polygone.h
+	<math.h>
+	<windows.h>
+
