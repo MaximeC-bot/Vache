@@ -61,7 +61,7 @@ POINT *PolygoneRegulier(int n,int r,int X,int Y) { // n>=3
   return pg; // after use ==> free(pg)
 }
 
-POINT *PolygoneEnSpirale(int n,int siz,int X,int Y) { // n: number of "branche"
+POINT *PolygoneEnSpirale(int n,int siz,int X,int Y) { // n= Nombre d'arêtes
   POINT *pg=(POINT*)malloc(2*(1+n)*sizeof(POINT));
   for (int i=0,m=2*(1+n)-1; i<=n; ++i,--m) {
     int u=siz*((i&2)?-i:i),v=siz*((i&2)?-i-2:i+2);

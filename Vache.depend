@@ -3,7 +3,12 @@
 	"Polygone.h"
 	<stdio.h>
 
-1395737702 d:\projets\vache\vache\polygone.h
+1621195081 d:\projets\vache\vache\polygone.h
 	<math.h>
 	<windows.h>
+
+1621195460 source:d:\projets\vache\vache\main.cpp
+	<iostream>
+	<stdio.h>
+	"Polygone.h"
 

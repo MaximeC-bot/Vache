@@ -1,8 +1,7 @@
 #include <math.h>
 #include <windows.h>
 
-typedef float real; // ou typedef double real;
-// typedef struct tagPOINT {LONG x; LONG y;} POINT;
+typedef float real;
 
 bool Inside(int n,POINT *pg,int X,int Y);
 bool Inside(int n,real xx[],real yy[],real X,real Y);
